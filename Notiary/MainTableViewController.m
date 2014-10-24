@@ -10,6 +10,7 @@
 #import "NoteTableViewCell.h"
 #import "notiaryNoteDataStore.h"
 #import "notiaryNote.h"
+#import "NoteViewController.h"
 
 @interface MainTableViewController ()
 
@@ -38,7 +39,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+- (void)viewWillAppear:(BOOL)animated {
+    [self.tableView reloadData];
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
@@ -117,14 +120,15 @@
 }
 */
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:(@"viewNote") ])
+    {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        NoteViewController *viewNote = segue.destinationViewController;
+        viewNote.currentNote = [self.dataStore.notiaryNoteArray objectAtIndex:indexPath.row];
+    }
 }
-*/
 
 @end

@@ -1,37 +1,38 @@
 //
-//  AddNewNoteViewController.m
+//  EditViewController.m
 //  Notiary
 //
-//  Created by Jean Mariano on 10/20/14.
+//  Created by Jean Mariano on 10/24/14.
 //  Copyright (c) 2014 JMariano. All rights reserved.
 //
 
-#import "AddNewNoteViewController.h"
+#import "EditViewController.h"
 #import "notiaryNoteDataStore.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface AddNewNoteViewController () <UIImagePickerControllerDelegate, UINavigationBarDelegate>
+@interface EditViewController ()
 
-@property (weak, nonatomic) IBOutlet UIImageView *noteImageView;
 @property (weak, nonatomic) IBOutlet UITextField *noteTitleTextField;
+@property (weak, nonatomic) IBOutlet UIImageView *noteImageView;
 @property (weak, nonatomic) IBOutlet UITextView *noteBodyTextView;
 
-@property (strong, nonatomic) notiaryNoteDataStore *dataStore;
+- (IBAction)editPicture:(id)sender;
 
 - (IBAction)saveNotiaryNote:(id)sender;
 
-- (IBAction)addPicture:(UIBarButtonItem *)sender;
+@property (strong, nonatomic) notiaryNoteDataStore *dataStore;
+
 
 @end
 
-@implementation AddNewNoteViewController
+@implementation EditViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.noteImageView.image = [UIImage imageNamed:@"image1.jpg"];
-    
-    self.dataStore = [notiaryNoteDataStore sharedNotiaryNotesDataStore];
+    self.noteTitleTextField.text = self.currentNote.noteTitle;
+    self.noteBodyTextView.text = self.currentNote.noteBody;
+    self.noteImageView.image = self.currentNote.noteImage;
     
     //To make the border look very close to a UITextField
     [self.noteBodyTextView.layer setBorderColor:[[[UIColor grayColor] colorWithAlphaComponent:0.2] CGColor]];
@@ -49,27 +50,25 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 - (IBAction)saveNotiaryNote:(id)sender {
     
-    UIImage *noteImage  = self.noteImageView.image;
-    NSString *title = self.noteTitleTextField.text;
-    NSString *body = self.noteBodyTextView.text;
-    
-    [self.dataStore createNotiaryNoteWithTitle:title withBody:body withImage:noteImage];
+    self.currentNote.noteTitle = self.noteTitleTextField.text;
+    self.currentNote.noteBody = self.noteBodyTextView.text;
+    self.currentNote.noteImage = self.noteImageView.image;
     
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (IBAction)addPicture:(UIBarButtonItem *)sender {
+- (IBAction)editPicture:(UIBarButtonItem *)sender {
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
     picker.allowsEditing = YES;
@@ -84,6 +83,7 @@
     [picker dismissViewControllerAnimated:YES completion:NULL];
     
 }
+
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     
     UIImage *notiaryImage = [UIImage imageNamed:@"image1.jpg"];

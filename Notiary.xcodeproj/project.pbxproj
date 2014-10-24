@@ -26,6 +26,10 @@
 		B3AA526F19F5CAD500BA0D70 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AA526D19F5CAD500BA0D70 /* delete.png */; };
 		B3AA527019F5CAD500BA0D70 /* edit2.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AA526E19F5CAD500BA0D70 /* edit2.png */; };
 		B3AA527219F5EC5700BA0D70 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AA527119F5EC5700BA0D70 /* edit.png */; };
+		B3E8015119F9E4E400671874 /* vertical-line.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E8015019F9E4E400671874 /* vertical-line.png */; };
+		B3E8015519F9EEEE00671874 /* addimage.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E8015419F9EEEE00671874 /* addimage.png */; };
+		B3E8015819F9F6A800671874 /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E8015719F9F6A800671874 /* NoteViewController.m */; };
+		B3E8015B19FA0C9100671874 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E8015A19FA0C9100671874 /* EditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,12 @@
 		B3AA526D19F5CAD500BA0D70 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		B3AA526E19F5CAD500BA0D70 /* edit2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit2.png; sourceTree = "<group>"; };
 		B3AA527119F5EC5700BA0D70 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		B3E8015019F9E4E400671874 /* vertical-line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vertical-line.png"; sourceTree = "<group>"; };
+		B3E8015419F9EEEE00671874 /* addimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addimage.png; sourceTree = "<group>"; };
+		B3E8015619F9F6A800671874 /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteViewController.h; sourceTree = "<group>"; };
+		B3E8015719F9F6A800671874 /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteViewController.m; sourceTree = "<group>"; };
+		B3E8015919FA0C9100671874 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		B3E8015A19FA0C9100671874 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +161,8 @@
 		B3AA524B19F4B56C00BA0D70 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				B3E8015419F9EEEE00671874 /* addimage.png */,
+				B3E8015019F9E4E400671874 /* vertical-line.png */,
 				B3AA527119F5EC5700BA0D70 /* edit.png */,
 				B3AA526519F5C78D00BA0D70 /* Default.png */,
 				B3AA526619F5C78D00BA0D70 /* Default2x.png */,
@@ -167,8 +179,12 @@
 		B3AA524E19F4B87800BA0D70 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B3E8015919FA0C9100671874 /* EditViewController.h */,
+				B3E8015A19FA0C9100671874 /* EditViewController.m */,
 				B3AA525E19F4D59300BA0D70 /* AddNewNoteViewController.h */,
 				B3AA525F19F4D59300BA0D70 /* AddNewNoteViewController.m */,
+				B3E8015619F9F6A800671874 /* NoteViewController.h */,
+				B3E8015719F9F6A800671874 /* NoteViewController.m */,
 				B3AA524619F4B47100BA0D70 /* MainTableViewController.h */,
 				B3AA524719F4B47100BA0D70 /* MainTableViewController.m */,
 			);
@@ -282,9 +298,11 @@
 				B3AA527219F5EC5700BA0D70 /* edit.png in Resources */,
 				B3AA527019F5CAD500BA0D70 /* edit2.png in Resources */,
 				B3AA526A19F5C78D00BA0D70 /* Default2x.png in Resources */,
+				B3E8015119F9E4E400671874 /* vertical-line.png in Resources */,
 				B3AA522C19F4B43200BA0D70 /* Main.storyboard in Resources */,
 				B3AA523119F4B43200BA0D70 /* LaunchScreen.xib in Resources */,
 				B3AA522E19F4B43200BA0D70 /* Images.xcassets in Resources */,
+				B3E8015519F9EEEE00671874 /* addimage.png in Resources */,
 				B3AA526919F5C78D00BA0D70 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,9 +322,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3AA522619F4B43200BA0D70 /* AppDelegate.m in Sources */,
+				B3E8015B19FA0C9100671874 /* EditViewController.m in Sources */,
 				B3AA526019F4D59300BA0D70 /* AddNewNoteViewController.m in Sources */,
 				B3AA522319F4B43200BA0D70 /* main.m in Sources */,
 				B3AA524919F4B47100BA0D70 /* MainTableViewController.m in Sources */,
+				B3E8015819F9F6A800671874 /* NoteViewController.m in Sources */,
 				B3AA525619F4C93100BA0D70 /* notiaryNote.m in Sources */,
 				B3AA525919F4CBAA00BA0D70 /* notiaryNoteDataStore.m in Sources */,
 				B3AA525119F4B8BD00BA0D70 /* NoteTableViewCell.m in Sources */,
@@ -500,6 +520,7 @@
 				B3AA524219F4B43200BA0D70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3AA524319F4B43200BA0D70 /* Build configuration list for PBXNativeTarget "NotiaryTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +529,7 @@
 				B3AA524519F4B43200BA0D70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
