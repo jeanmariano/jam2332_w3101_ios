@@ -10,9 +10,13 @@
 #import <MessageUI/MFMailComposeViewController.h>
 #import <UIKit/UIKit.h>
 #import "notiaryNote.h"
+#import "notiaryNoteDataStore.h"
 
-@interface NoteViewController : UIViewController
+@interface NoteViewController : UIViewController<UIAlertViewDelegate>
 
 @property (strong, nonatomic) notiaryNote *currentNote;
+@property (strong, nonatomic) notiaryNoteDataStore *dataStore;
+@property NSIndexPath *indexPath;
+
 
 @end

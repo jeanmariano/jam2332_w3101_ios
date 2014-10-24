@@ -26,6 +26,7 @@
 		B3AA526F19F5CAD500BA0D70 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AA526D19F5CAD500BA0D70 /* delete.png */; };
 		B3AA527019F5CAD500BA0D70 /* edit2.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AA526E19F5CAD500BA0D70 /* edit2.png */; };
 		B3AA527219F5EC5700BA0D70 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AA527119F5EC5700BA0D70 /* edit.png */; };
+		B3CC982119FA4D1D0080DAC8 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = B3CC982019FA4D1D0080DAC8 /* placeholder.png */; };
 		B3E8015119F9E4E400671874 /* vertical-line.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E8015019F9E4E400671874 /* vertical-line.png */; };
 		B3E8015519F9EEEE00671874 /* addimage.png in Resources */ = {isa = PBXBuildFile; fileRef = B3E8015419F9EEEE00671874 /* addimage.png */; };
 		B3E8015819F9F6A800671874 /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E8015719F9F6A800671874 /* NoteViewController.m */; };
@@ -72,6 +73,7 @@
 		B3AA526D19F5CAD500BA0D70 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		B3AA526E19F5CAD500BA0D70 /* edit2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit2.png; sourceTree = "<group>"; };
 		B3AA527119F5EC5700BA0D70 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		B3CC982019FA4D1D0080DAC8 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		B3E8015019F9E4E400671874 /* vertical-line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vertical-line.png"; sourceTree = "<group>"; };
 		B3E8015419F9EEEE00671874 /* addimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addimage.png; sourceTree = "<group>"; };
 		B3E8015619F9F6A800671874 /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteViewController.h; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		B3AA524B19F4B56C00BA0D70 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				B3CC982019FA4D1D0080DAC8 /* placeholder.png */,
 				B3E8015419F9EEEE00671874 /* addimage.png */,
 				B3E8015019F9E4E400671874 /* vertical-line.png */,
 				B3AA527119F5EC5700BA0D70 /* edit.png */,
@@ -302,6 +305,7 @@
 				B3AA522C19F4B43200BA0D70 /* Main.storyboard in Resources */,
 				B3AA523119F4B43200BA0D70 /* LaunchScreen.xib in Resources */,
 				B3AA522E19F4B43200BA0D70 /* Images.xcassets in Resources */,
+				B3CC982119FA4D1D0080DAC8 /* placeholder.png in Resources */,
 				B3E8015519F9EEEE00671874 /* addimage.png in Resources */,
 				B3AA526919F5C78D00BA0D70 /* Default.png in Resources */,
 			);

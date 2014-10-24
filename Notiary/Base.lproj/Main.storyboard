@@ -283,7 +283,7 @@
                         <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="zC9-vC-DPa"/>
                         <barButtonItem systemItem="trash" id="kCO-VN-Wnu">
                             <connections>
-                                <action selector="deleteNote:" destination="WYl-lD-3Iq" id="0hC-AR-l6c"/>
+                                <action selector="deleteNote:" destination="WYl-lD-3Iq" id="QD0-Py-SNr"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="6Jg-vD-ZOT"/>
@@ -361,16 +361,16 @@
                                 <exclude reference="0Qy-Hh-hCS"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="5N2-zQ-OcG"/>
-                                <exclude reference="b8a-du-j2c"/>
-                                <exclude reference="dyL-KA-UHy"/>
                                 <exclude reference="6nW-BJ-fmD"/>
                                 <exclude reference="IVj-50-YhL"/>
                                 <exclude reference="TWP-aA-wmk"/>
                                 <exclude reference="sNL-X8-MU8"/>
+                                <exclude reference="z9P-ga-SmL"/>
                                 <exclude reference="Uff-uH-ojl"/>
                                 <exclude reference="jlK-fk-xWJ"/>
-                                <exclude reference="z9P-ga-SmL"/>
+                                <exclude reference="5N2-zQ-OcG"/>
+                                <exclude reference="b8a-du-j2c"/>
+                                <exclude reference="dyL-KA-UHy"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -380,27 +380,35 @@
                                 <include reference="0Qy-Hh-hCS"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="5N2-zQ-OcG"/>
-                                <include reference="b8a-du-j2c"/>
-                                <include reference="dyL-KA-UHy"/>
                                 <include reference="6nW-BJ-fmD"/>
                                 <include reference="IVj-50-YhL"/>
                                 <include reference="TWP-aA-wmk"/>
                                 <include reference="sNL-X8-MU8"/>
+                                <include reference="z9P-ga-SmL"/>
                                 <include reference="Uff-uH-ojl"/>
                                 <include reference="jlK-fk-xWJ"/>
-                                <include reference="z9P-ga-SmL"/>
+                                <include reference="5N2-zQ-OcG"/>
+                                <include reference="b8a-du-j2c"/>
+                                <include reference="dyL-KA-UHy"/>
                             </mask>
                         </variation>
                     </view>
                     <toolbarItems>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="5M4-Xw-iJ6"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="5M4-Xw-iJ6">
+                            <connections>
+                                <action selector="saveNotiaryNote:" destination="N1W-zC-fxB" id="g4h-gX-8Yc"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem systemItem="save" id="OU6-Gf-PDk">
                             <connections>
                                 <action selector="saveNotiaryNote:" destination="N1W-zC-fxB" id="rPl-B8-M1j"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Cfx-WW-FpV"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Cfx-WW-FpV">
+                            <connections>
+                                <action selector="saveNotiaryNote:" destination="N1W-zC-fxB" id="YB9-Zu-0GL"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Edit Note" id="190-Zs-8sa">
                         <barButtonItem key="rightBarButtonItem" image="addimage.png" id="ghk-hG-K0v">
@@ -427,23 +435,23 @@
                         <viewControllerLayoutGuide type="top" id="Jqv-Rf-Zhp"/>
                         <viewControllerLayoutGuide type="bottom" id="0d9-Ad-uXK"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9Wl-5e-O4L">
+                    <view key="view" contentMode="scaleToFill" id="9Wl-5e-O4L" customClass="UIScrollView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="44i-DM-tuW">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="247" id="tXj-Ub-gWf"/>
+                                    <constraint firstAttribute="height" constant="247" id="W9W-fM-hsv"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="tXj-Ub-gWf"/>
+                                        <exclude reference="W9W-fM-hsv"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="tXj-Ub-gWf"/>
+                                        <include reference="W9W-fM-hsv"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -463,16 +471,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rCc-Ya-8Lf" firstAttribute="top" secondItem="44i-DM-tuW" secondAttribute="bottom" constant="21" id="0ka-zs-lgC"/>
-                            <constraint firstItem="44i-DM-tuW" firstAttribute="top" secondItem="Jqv-Rf-Zhp" secondAttribute="bottom" constant="20" id="3BQ-PL-l6Z"/>
-                            <constraint firstItem="rCc-Ya-8Lf" firstAttribute="trailing" secondItem="44i-DM-tuW" secondAttribute="trailing" id="BkC-RC-sVV"/>
-                            <constraint firstItem="44i-DM-tuW" firstAttribute="leading" secondItem="rCc-Ya-8Lf" secondAttribute="leading" id="DGd-MJ-uRe"/>
-                            <constraint firstItem="sol-eO-BQa" firstAttribute="leading" secondItem="rCc-Ya-8Lf" secondAttribute="leading" id="M7Y-6Y-Jo0"/>
-                            <constraint firstItem="sol-eO-BQa" firstAttribute="top" secondItem="rCc-Ya-8Lf" secondAttribute="bottom" constant="15" id="P1S-9e-KI5"/>
-                            <constraint firstItem="sol-eO-BQa" firstAttribute="trailing" secondItem="9Wl-5e-O4L" secondAttribute="trailingMargin" id="Rv9-dJ-Wjf"/>
-                            <constraint firstItem="0d9-Ad-uXK" firstAttribute="top" secondItem="sol-eO-BQa" secondAttribute="bottom" constant="19" id="VVB-he-iI6"/>
-                            <constraint firstItem="rCc-Ya-8Lf" firstAttribute="trailing" secondItem="sol-eO-BQa" secondAttribute="trailing" id="hud-bX-N7c"/>
-                            <constraint firstItem="44i-DM-tuW" firstAttribute="leading" secondItem="9Wl-5e-O4L" secondAttribute="leadingMargin" id="xOj-Ug-d9t"/>
+                            <constraint firstItem="rCc-Ya-8Lf" firstAttribute="top" secondItem="44i-DM-tuW" secondAttribute="bottom" constant="21" id="DW7-ir-Z2t"/>
+                            <constraint firstItem="sol-eO-BQa" firstAttribute="trailing" secondItem="rCc-Ya-8Lf" secondAttribute="trailing" id="Ivz-PY-IDK"/>
+                            <constraint firstItem="sol-eO-BQa" firstAttribute="leading" secondItem="rCc-Ya-8Lf" secondAttribute="leading" id="KCo-SL-deF"/>
+                            <constraint firstItem="rCc-Ya-8Lf" firstAttribute="trailing" secondItem="9Wl-5e-O4L" secondAttribute="trailingMargin" id="LXU-LY-iJr"/>
+                            <constraint firstItem="rCc-Ya-8Lf" firstAttribute="leading" secondItem="9Wl-5e-O4L" secondAttribute="leadingMargin" id="Lvy-pU-qyL"/>
+                            <constraint firstItem="44i-DM-tuW" firstAttribute="trailing" secondItem="rCc-Ya-8Lf" secondAttribute="trailing" id="QDE-DC-tS0"/>
+                            <constraint firstItem="sol-eO-BQa" firstAttribute="top" secondItem="rCc-Ya-8Lf" secondAttribute="bottom" constant="15" id="SLL-x3-7zJ"/>
+                            <constraint firstItem="rCc-Ya-8Lf" firstAttribute="leading" secondItem="44i-DM-tuW" secondAttribute="leading" id="Vmt-gw-nds"/>
+                            <constraint firstItem="44i-DM-tuW" firstAttribute="top" secondItem="Jqv-Rf-Zhp" secondAttribute="bottom" constant="20" id="Zwp-xf-16P"/>
+                            <constraint firstItem="0d9-Ad-uXK" firstAttribute="top" secondItem="sol-eO-BQa" secondAttribute="bottom" constant="19" id="iJU-1R-V4h"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -481,16 +489,16 @@
                                 <exclude reference="sol-eO-BQa"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="3BQ-PL-l6Z"/>
-                                <exclude reference="DGd-MJ-uRe"/>
-                                <exclude reference="xOj-Ug-d9t"/>
-                                <exclude reference="0ka-zs-lgC"/>
-                                <exclude reference="BkC-RC-sVV"/>
-                                <exclude reference="hud-bX-N7c"/>
-                                <exclude reference="M7Y-6Y-Jo0"/>
-                                <exclude reference="P1S-9e-KI5"/>
-                                <exclude reference="Rv9-dJ-Wjf"/>
-                                <exclude reference="VVB-he-iI6"/>
+                                <exclude reference="QDE-DC-tS0"/>
+                                <exclude reference="Zwp-xf-16P"/>
+                                <exclude reference="DW7-ir-Z2t"/>
+                                <exclude reference="LXU-LY-iJr"/>
+                                <exclude reference="Lvy-pU-qyL"/>
+                                <exclude reference="Vmt-gw-nds"/>
+                                <exclude reference="Ivz-PY-IDK"/>
+                                <exclude reference="KCo-SL-deF"/>
+                                <exclude reference="SLL-x3-7zJ"/>
+                                <exclude reference="iJU-1R-V4h"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -500,16 +508,16 @@
                                 <include reference="sol-eO-BQa"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="3BQ-PL-l6Z"/>
-                                <include reference="DGd-MJ-uRe"/>
-                                <include reference="xOj-Ug-d9t"/>
-                                <include reference="0ka-zs-lgC"/>
-                                <include reference="BkC-RC-sVV"/>
-                                <include reference="hud-bX-N7c"/>
-                                <include reference="M7Y-6Y-Jo0"/>
-                                <include reference="P1S-9e-KI5"/>
-                                <include reference="Rv9-dJ-Wjf"/>
-                                <include reference="VVB-he-iI6"/>
+                                <include reference="QDE-DC-tS0"/>
+                                <include reference="Zwp-xf-16P"/>
+                                <include reference="DW7-ir-Z2t"/>
+                                <include reference="LXU-LY-iJr"/>
+                                <include reference="Lvy-pU-qyL"/>
+                                <include reference="Vmt-gw-nds"/>
+                                <include reference="Ivz-PY-IDK"/>
+                                <include reference="KCo-SL-deF"/>
+                                <include reference="SLL-x3-7zJ"/>
+                                <include reference="iJU-1R-V4h"/>
                             </mask>
                         </variation>
                     </view>
@@ -568,6 +576,6 @@
         <image name="sendemail.png" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JAn-AX-Q8g"/>
+        <segue reference="COq-NW-Xfs"/>
     </inferredMetricsTieBreakers>
 </document>

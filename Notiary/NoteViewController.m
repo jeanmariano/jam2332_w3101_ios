@@ -11,9 +11,7 @@
 #import "notiaryNote.h"
 
 
-@interface NoteViewController ()
-
-@property (strong, nonatomic) notiaryNoteDataStore *dataStore;
+@interface NoteViewController()
 
 @property (weak, nonatomic) IBOutlet UINavigationItem *noteTitle;
 @property (weak, nonatomic) IBOutlet UIImageView *noteImage;
@@ -51,15 +49,40 @@
     {
         NoteViewController *editNote = segue.destinationViewController;
         
+        editNote.indexPath = self.indexPath;
         editNote.currentNote = self.currentNote;
     }
+//    else if([segue.identifier isEqualToString:(@"deleteNote")])
+//    {
+////        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Are you sure you want to delete this note?"
+////                                                        message:@""
+////                                                       delegate:nil
+////                                              cancelButtonTitle:@"Cancel"
+////                                              otherButtonTitles:@"OK"];
+////        [alert show];
+//        NSLog(@"what");
+//    }
 }
 
 
 - (IBAction)deleteNote:(id)sender {
-    [self.dataStore delete:self.currentNote];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Are you sure you want to delete this note?"
+                                                    message:@""
+                                                   delegate:self
+                                          cancelButtonTitle:@"Cancel"
+                                          otherButtonTitles:@"OK",nil];
+    [alert show];
+    
+    //NSLog(self.currentNote);
 }
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 1) {
+        [self.dataStore.notiaryNoteArray removeObjectAtIndex:_indexPath.row];
+        [self.navigationController popViewControllerAnimated:TRUE];
+    }
+}
 
 #pragma mark - MFMailCompose delegate methods
 

@@ -128,6 +128,8 @@
         
         NoteViewController *viewNote = segue.destinationViewController;
         viewNote.currentNote = [self.dataStore.notiaryNoteArray objectAtIndex:indexPath.row];
+        viewNote.indexPath = indexPath;
+        viewNote.dataStore = _dataStore;
     }
 }
 

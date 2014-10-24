@@ -29,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.noteImageView.image = [UIImage imageNamed:@"image1.jpg"];
+    self.noteImageView.image = [UIImage imageNamed:@"placeholder.png"];
     
     self.dataStore = [notiaryNoteDataStore sharedNotiaryNotesDataStore];
     
@@ -86,7 +86,7 @@
 }
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     
-    UIImage *notiaryImage = [UIImage imageNamed:@"image1.jpg"];
+    UIImage *notiaryImage = [UIImage imageNamed:@"placeholder.png"];
     self.noteImageView.image = notiaryImage;
     
     [picker dismissViewControllerAnimated:YES completion:NULL];

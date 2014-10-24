@@ -12,5 +12,6 @@
 @interface EditViewController : UIViewController
 
 @property (strong, nonatomic) notiaryNote *currentNote;
+@property NSIndexPath *indexPath;
 
 @end
