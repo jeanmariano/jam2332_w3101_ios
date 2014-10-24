@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 JMariano. All rights reserved.
 //
 
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 #import <UIKit/UIKit.h>
 #import "notiaryNote.h"
 
