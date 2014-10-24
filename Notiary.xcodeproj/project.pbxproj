@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3AA522319F4B43200BA0D70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA522219F4B43200BA0D70 /* main.m */; };
+		B3AA522619F4B43200BA0D70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA522519F4B43200BA0D70 /* AppDelegate.m */; };
+		B3AA522C19F4B43200BA0D70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3AA522A19F4B43200BA0D70 /* Main.storyboard */; };
+		B3AA522E19F4B43200BA0D70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3AA522D19F4B43200BA0D70 /* Images.xcassets */; };
+		B3AA523119F4B43200BA0D70 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3AA522F19F4B43200BA0D70 /* LaunchScreen.xib */; };
+		B3AA523D19F4B43200BA0D70 /* NotiaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA523C19F4B43200BA0D70 /* NotiaryTests.m */; };
+		B3AA524919F4B47100BA0D70 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA524719F4B47100BA0D70 /* MainTableViewController.m */; };
+		B3AA524A19F4B47100BA0D70 /* MainTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3AA524819F4B47100BA0D70 /* MainTableViewController.xib */; };
+		B3AA525119F4B8BD00BA0D70 /* NoteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA525019F4B8BD00BA0D70 /* NoteTableViewCell.m */; };
+		B3AA525619F4C93100BA0D70 /* notiaryNote.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA525519F4C93100BA0D70 /* notiaryNote.m */; };
+		B3AA525919F4CBAA00BA0D70 /* notiaryNoteDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA525819F4CBAA00BA0D70 /* notiaryNoteDataStore.m */; };
+		B3AA526019F4D59300BA0D70 /* AddNewNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA525F19F4D59300BA0D70 /* AddNewNoteViewController.m */; };
+		B3AA526919F5C78D00BA0D70 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AA526519F5C78D00BA0D70 /* Default.png */; };
+		B3AA526A19F5C78D00BA0D70 /* Default2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AA526619F5C78D00BA0D70 /* Default2x.png */; };
+		B3AA526B19F5C78D00BA0D70 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3AA526719F5C78D00BA0D70 /* image1.jpg */; };
+		B3AA526C19F5C78D00BA0D70 /* sendemail.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AA526819F5C78D00BA0D70 /* sendemail.png */; };
+		B3AA526F19F5CAD500BA0D70 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AA526D19F5CAD500BA0D70 /* delete.png */; };
+		B3AA527019F5CAD500BA0D70 /* edit2.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AA526E19F5CAD500BA0D70 /* edit2.png */; };
+		B3AA527219F5EC5700BA0D70 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AA527119F5EC5700BA0D70 /* edit.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3AA523719F4B43200BA0D70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3AA521519F4B43200BA0D70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3AA521C19F4B43200BA0D70;
+			remoteInfo = Notiary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B3AA521D19F4B43200BA0D70 /* Notiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3AA522119F4B43200BA0D70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3AA522219F4B43200BA0D70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3AA522419F4B43200BA0D70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B3AA522519F4B43200BA0D70 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B3AA522B19F4B43200BA0D70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3AA522D19F4B43200BA0D70 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B3AA523019F4B43200BA0D70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B3AA523619F4B43200BA0D70 /* NotiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3AA523B19F4B43200BA0D70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3AA523C19F4B43200BA0D70 /* NotiaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotiaryTests.m; sourceTree = "<group>"; };
+		B3AA524619F4B47100BA0D70 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		B3AA524719F4B47100BA0D70 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		B3AA524819F4B47100BA0D70 /* MainTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewController.xib; sourceTree = "<group>"; };
+		B3AA524F19F4B8BD00BA0D70 /* NoteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteTableViewCell.h; sourceTree = "<group>"; };
+		B3AA525019F4B8BD00BA0D70 /* NoteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteTableViewCell.m; sourceTree = "<group>"; };
+		B3AA525419F4C93100BA0D70 /* notiaryNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = notiaryNote.h; sourceTree = "<group>"; };
+		B3AA525519F4C93100BA0D70 /* notiaryNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = notiaryNote.m; sourceTree = "<group>"; };
+		B3AA525719F4CBAA00BA0D70 /* notiaryNoteDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = notiaryNoteDataStore.h; sourceTree = "<group>"; };
+		B3AA525819F4CBAA00BA0D70 /* notiaryNoteDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = notiaryNoteDataStore.m; sourceTree = "<group>"; };
+		B3AA525E19F4D59300BA0D70 /* AddNewNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewNoteViewController.h; sourceTree = "<group>"; };
+		B3AA525F19F4D59300BA0D70 /* AddNewNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewNoteViewController.m; sourceTree = "<group>"; };
+		B3AA526519F5C78D00BA0D70 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B3AA526619F5C78D00BA0D70 /* Default2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default2x.png; sourceTree = "<group>"; };
+		B3AA526719F5C78D00BA0D70 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		B3AA526819F5C78D00BA0D70 /* sendemail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sendemail.png; sourceTree = "<group>"; };
+		B3AA526D19F5CAD500BA0D70 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		B3AA526E19F5CAD500BA0D70 /* edit2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit2.png; sourceTree = "<group>"; };
+		B3AA527119F5EC5700BA0D70 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3AA521A19F4B43200BA0D70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3AA523319F4B43200BA0D70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3AA521419F4B43200BA0D70 = {
+			isa = PBXGroup;
+			children = (
+				B3AA521F19F4B43200BA0D70 /* Notiary */,
+				B3AA523919F4B43200BA0D70 /* NotiaryTests */,
+				B3AA521E19F4B43200BA0D70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3AA521E19F4B43200BA0D70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3AA521D19F4B43200BA0D70 /* Notiary.app */,
+				B3AA523619F4B43200BA0D70 /* NotiaryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3AA521F19F4B43200BA0D70 /* Notiary */ = {
+			isa = PBXGroup;
+			children = (
+				B3AA522A19F4B43200BA0D70 /* Main.storyboard */,
+				B3AA525319F4B8DB00BA0D70 /* Models */,
+				B3AA525219F4B8C900BA0D70 /* Views */,
+				B3AA524E19F4B87800BA0D70 /* Controllers */,
+				B3AA524819F4B47100BA0D70 /* MainTableViewController.xib */,
+				B3AA524B19F4B56C00BA0D70 /* Assets */,
+				B3AA522019F4B43200BA0D70 /* Supporting Files */,
+			);
+			path = Notiary;
+			sourceTree = "<group>";
+		};
+		B3AA522019F4B43200BA0D70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3AA522419F4B43200BA0D70 /* AppDelegate.h */,
+				B3AA522519F4B43200BA0D70 /* AppDelegate.m */,
+				B3AA522119F4B43200BA0D70 /* Info.plist */,
+				B3AA522219F4B43200BA0D70 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3AA523919F4B43200BA0D70 /* NotiaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3AA523C19F4B43200BA0D70 /* NotiaryTests.m */,
+				B3AA523A19F4B43200BA0D70 /* Supporting Files */,
+			);
+			path = NotiaryTests;
+			sourceTree = "<group>";
+		};
+		B3AA523A19F4B43200BA0D70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3AA523B19F4B43200BA0D70 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3AA524B19F4B56C00BA0D70 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B3AA527119F5EC5700BA0D70 /* edit.png */,
+				B3AA526519F5C78D00BA0D70 /* Default.png */,
+				B3AA526619F5C78D00BA0D70 /* Default2x.png */,
+				B3AA526D19F5CAD500BA0D70 /* delete.png */,
+				B3AA526E19F5CAD500BA0D70 /* edit2.png */,
+				B3AA526719F5C78D00BA0D70 /* image1.jpg */,
+				B3AA526819F5C78D00BA0D70 /* sendemail.png */,
+				B3AA522D19F4B43200BA0D70 /* Images.xcassets */,
+				B3AA522F19F4B43200BA0D70 /* LaunchScreen.xib */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		B3AA524E19F4B87800BA0D70 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3AA525E19F4D59300BA0D70 /* AddNewNoteViewController.h */,
+				B3AA525F19F4D59300BA0D70 /* AddNewNoteViewController.m */,
+				B3AA524619F4B47100BA0D70 /* MainTableViewController.h */,
+				B3AA524719F4B47100BA0D70 /* MainTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B3AA525219F4B8C900BA0D70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3AA524F19F4B8BD00BA0D70 /* NoteTableViewCell.h */,
+				B3AA525019F4B8BD00BA0D70 /* NoteTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B3AA525319F4B8DB00BA0D70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3AA525419F4C93100BA0D70 /* notiaryNote.h */,
+				B3AA525519F4C93100BA0D70 /* notiaryNote.m */,
+				B3AA525719F4CBAA00BA0D70 /* notiaryNoteDataStore.h */,
+				B3AA525819F4CBAA00BA0D70 /* notiaryNoteDataStore.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3AA521C19F4B43200BA0D70 /* Notiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3AA524019F4B43200BA0D70 /* Build configuration list for PBXNativeTarget "Notiary" */;
+			buildPhases = (
+				B3AA521919F4B43200BA0D70 /* Sources */,
+				B3AA521A19F4B43200BA0D70 /* Frameworks */,
+				B3AA521B19F4B43200BA0D70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Notiary;
+			productName = Notiary;
+			productReference = B3AA521D19F4B43200BA0D70 /* Notiary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3AA523519F4B43200BA0D70 /* NotiaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3AA524319F4B43200BA0D70 /* Build configuration list for PBXNativeTarget "NotiaryTests" */;
+			buildPhases = (
+				B3AA523219F4B43200BA0D70 /* Sources */,
+				B3AA523319F4B43200BA0D70 /* Frameworks */,
+				B3AA523419F4B43200BA0D70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3AA523819F4B43200BA0D70 /* PBXTargetDependency */,
+			);
+			name = NotiaryTests;
+			productName = NotiaryTests;
+			productReference = B3AA523619F4B43200BA0D70 /* NotiaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3AA521519F4B43200BA0D70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = JMariano;
+				TargetAttributes = {
+					B3AA521C19F4B43200BA0D70 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					B3AA523519F4B43200BA0D70 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = B3AA521C19F4B43200BA0D70;
+					};
+				};
+			};
+			buildConfigurationList = B3AA521819F4B43200BA0D70 /* Build configuration list for PBXProject "Notiary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3AA521419F4B43200BA0D70;
+			productRefGroup = B3AA521E19F4B43200BA0D70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3AA521C19F4B43200BA0D70 /* Notiary */,
+				B3AA523519F4B43200BA0D70 /* NotiaryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3AA521B19F4B43200BA0D70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3AA526B19F5C78D00BA0D70 /* image1.jpg in Resources */,
+				B3AA524A19F4B47100BA0D70 /* MainTableViewController.xib in Resources */,
+				B3AA526C19F5C78D00BA0D70 /* sendemail.png in Resources */,
+				B3AA526F19F5CAD500BA0D70 /* delete.png in Resources */,
+				B3AA527219F5EC5700BA0D70 /* edit.png in Resources */,
+				B3AA527019F5CAD500BA0D70 /* edit2.png in Resources */,
+				B3AA526A19F5C78D00BA0D70 /* Default2x.png in Resources */,
+				B3AA522C19F4B43200BA0D70 /* Main.storyboard in Resources */,
+				B3AA523119F4B43200BA0D70 /* LaunchScreen.xib in Resources */,
+				B3AA522E19F4B43200BA0D70 /* Images.xcassets in Resources */,
+				B3AA526919F5C78D00BA0D70 /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3AA523419F4B43200BA0D70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3AA521919F4B43200BA0D70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3AA522619F4B43200BA0D70 /* AppDelegate.m in Sources */,
+				B3AA526019F4D59300BA0D70 /* AddNewNoteViewController.m in Sources */,
+				B3AA522319F4B43200BA0D70 /* main.m in Sources */,
+				B3AA524919F4B47100BA0D70 /* MainTableViewController.m in Sources */,
+				B3AA525619F4C93100BA0D70 /* notiaryNote.m in Sources */,
+				B3AA525919F4CBAA00BA0D70 /* notiaryNoteDataStore.m in Sources */,
+				B3AA525119F4B8BD00BA0D70 /* NoteTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3AA523219F4B43200BA0D70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3AA523D19F4B43200BA0D70 /* NotiaryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3AA523819F4B43200BA0D70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3AA521C19F4B43200BA0D70 /* Notiary */;
+			targetProxy = B3AA523719F4B43200BA0D70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3AA522A19F4B43200BA0D70 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3AA522B19F4B43200BA0D70 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B3AA522F19F4B43200BA0D70 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3AA523019F4B43200BA0D70 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3AA523E19F4B43200BA0D70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B3AA523F19F4B43200BA0D70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3AA524119F4B43200BA0D70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Notiary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B3AA524219F4B43200BA0D70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Notiary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B3AA524419F4B43200BA0D70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NotiaryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Notiary.app/Notiary";
+			};
+			name = Debug;
+		};
+		B3AA524519F4B43200BA0D70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NotiaryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Notiary.app/Notiary";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3AA521819F4B43200BA0D70 /* Build configuration list for PBXProject "Notiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3AA523E19F4B43200BA0D70 /* Debug */,
+				B3AA523F19F4B43200BA0D70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3AA524019F4B43200BA0D70 /* Build configuration list for PBXNativeTarget "Notiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3AA524119F4B43200BA0D70 /* Debug */,
+				B3AA524219F4B43200BA0D70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B3AA524319F4B43200BA0D70 /* Build configuration list for PBXNativeTarget "NotiaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3AA524419F4B43200BA0D70 /* Debug */,
+				B3AA524519F4B43200BA0D70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3AA521519F4B43200BA0D70 /* Project object */;
+}
