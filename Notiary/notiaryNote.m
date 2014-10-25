@@ -22,8 +22,37 @@
         _noteTitle = title;
         _noteBody = body;
         _noteImage = image;
+
+        //NSString *timestamp = [NSString stringWithFormat:@"%f",[[NSDate date] timeIntervalSince1970] * 1000];
+        
+        NSDate *currentTime = [NSDate date];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+        NSString *resultString = [dateFormatter stringFromDate: currentTime];
+        _noteTime = resultString;
+        NSLog(resultString);
     }
     return self;
 }
+
+- (id)initWithCoder:(NSCoder *)decoder {
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
+    
+    self.noteTitle = [decoder decodeObjectForKey:@"noteTitle"];
+    self.noteBody = [decoder decodeObjectForKey:@"noteBody"];
+    self.noteImage = [decoder decodeObjectForKey:@"noteimage"];
+    
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)encoder {
+    [encoder encodeObject:self.noteTitle forKey:@"noteTitle"];
+    [encoder encodeObject:self.noteBody forKey:@"noteBody"];
+    [encoder encodeInteger:self.noteImage forKey:@"noteImage"];
+}
+
 
 @end

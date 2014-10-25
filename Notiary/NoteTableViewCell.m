@@ -19,13 +19,4 @@
 
     // Configure the view for the selected state
 }
-
-- (IBAction)deleteButton:(id)sender {
-}
-
-- (IBAction)editButton:(id)sender {
-}
-
-- (IBAction)sendEmailButton:(id)sender {
-}
 @end

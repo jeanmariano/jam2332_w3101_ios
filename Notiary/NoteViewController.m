@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UINavigationItem *noteTitle;
 @property (weak, nonatomic) IBOutlet UIImageView *noteImage;
 @property (weak, nonatomic) IBOutlet UITextView *noteBody;
+@property (weak, nonatomic) IBOutlet UILabel *noteTime;
 
 - (IBAction)deleteNote:(id)sender;
 
@@ -29,6 +30,8 @@
     self.noteTitle.title = self.currentNote.noteTitle;
     self.noteBody.text = self.currentNote.noteBody;
     self.noteImage.image = self.currentNote.noteImage;
+    self.noteTime.text = self.currentNote.noteTime;
+    [self.noteImage setClipsToBounds:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,6 +44,8 @@
     self.noteTitle.title = self.currentNote.noteTitle;
     self.noteBody.text = self.currentNote.noteBody;
     self.noteImage.image = self.currentNote.noteImage;
+    self.noteTime.text = self.currentNote.noteTime;
+    [self.noteImage setClipsToBounds:YES];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -52,16 +57,6 @@
         editNote.indexPath = self.indexPath;
         editNote.currentNote = self.currentNote;
     }
-//    else if([segue.identifier isEqualToString:(@"deleteNote")])
-//    {
-////        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Are you sure you want to delete this note?"
-////                                                        message:@""
-////                                                       delegate:nil
-////                                              cancelButtonTitle:@"Cancel"
-////                                              otherButtonTitles:@"OK"];
-////        [alert show];
-//        NSLog(@"what");
-//    }
 }
 
 
@@ -73,8 +68,6 @@
                                           cancelButtonTitle:@"Cancel"
                                           otherButtonTitles:@"OK",nil];
     [alert show];
-    
-    //NSLog(self.currentNote);
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {

@@ -25,8 +25,6 @@
     
     self.dataStore = [notiaryNoteDataStore sharedNotiaryNotesDataStore];
     
-    UIImage *notiaryProfile = [UIImage imageNamed:@"image1.jpg"];
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -63,8 +61,10 @@
     notiaryNote *currentNote = [self.dataStore.notiaryNoteArray objectAtIndex:indexPath.row];
     
     cell.thumbImageView.image = currentNote.noteImage;
+    [cell.thumbImageView setClipsToBounds:YES];
     cell.titleLabel.text = currentNote.noteTitle;
     cell.noteSnippetLabel.text = currentNote.noteBody;
+    cell.noteTimeLabel.text = currentNote.noteTime;
     
     return cell;
 }

@@ -33,6 +33,7 @@
     self.noteTitleTextField.text = self.currentNote.noteTitle;
     self.noteBodyTextView.text = self.currentNote.noteBody;
     self.noteImageView.image = self.currentNote.noteImage;
+    [self.noteImageView setClipsToBounds:YES];
     
     //To make the border look very close to a UITextField
     [self.noteBodyTextView.layer setBorderColor:[[[UIColor grayColor] colorWithAlphaComponent:0.2] CGColor]];
@@ -86,12 +87,11 @@
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     
-    UIImage *notiaryImage = [UIImage imageNamed:@"image1.jpg"];
+    UIImage *notiaryImage = [UIImage imageNamed:@"placeholder.jpg"];
     self.noteImageView.image = notiaryImage;
     
     [picker dismissViewControllerAnimated:YES completion:NULL];
     
 }
-
 
 @end

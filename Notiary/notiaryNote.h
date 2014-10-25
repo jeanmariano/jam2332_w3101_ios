@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface notiaryNote : NSObject
+@interface notiaryNote : NSObject <NSCoding>
 
 @property (strong, nonatomic) UIImage *noteImage;
 @property (strong, nonatomic) NSString *noteTitle;
 @property (strong, nonatomic) NSString *noteBody;
+@property (strong, nonatomic) NSString *noteTime;
 
 - (instancetype) initWithTitle:(NSString *) title withBody:(NSString *) body withImage: (UIImage *) image;
 
