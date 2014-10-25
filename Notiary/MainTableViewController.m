@@ -24,6 +24,8 @@
     [super viewDidLoad];
     
     self.dataStore = [notiaryNoteDataStore sharedNotiaryNotesDataStore];
+    //NSData *archivedData = [[NSUserDefaults standardUserDefaults] objectForKey:@"notiaryNoteArray"];
+    //self.dataStore.notiaryNoteArray = [NSKeyedUnarchiver unarchiveObjectWithData:archivedData];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
